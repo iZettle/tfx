@@ -130,7 +130,13 @@ setup(
     tests_require=_make_required_test_packages(),
     python_requires='>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<4',
     packages=find_packages(),
-    include_package_data=True,
+    include_pakcage_data=True,
+    package_data={
+        'tfx': [
+            # Data for chicago_taxi_pipeline example.
+            'tfx/examples/chicago_taxi_pipeline/data/simple/data.csv',
+        ],
+    },
     description='TensorFlow Extended (TFX) is a TensorFlow-based general-purpose machine learning platform implemented at Google',
     long_description=_LONG_DESCRIPTION,
     long_description_content_type='text/markdown',

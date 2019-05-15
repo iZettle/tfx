@@ -7,7 +7,8 @@
 *   Added ImportExampleGen component for importing tfrecord files with
     TF Example data format
 *   Added a generic ExampleGen component to reduce the work of custom ExampleGen
-*   Release Python 3 type hints.
+*   Released Python 3 type hints.
+*   Added an Airflow integration test for chicago_taxi_simple example.
 
 ## Bug fixes and other changes
 *   Declared 'cmle_training_args' on trainer and 'cmle_serving_args' on
